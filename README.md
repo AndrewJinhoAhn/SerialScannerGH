@@ -1,4 +1,4 @@
-# SerialScanner
+# SerialScannerGH
 
 A Grasshopper component that lists the serial (COM) devices connected to your PC,
 with their human-readable names — so you can find the right port for any USB-serial hardware without opening Device Manager.
