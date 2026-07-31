@@ -11,19 +11,19 @@ namespace SerialScanner
         public SerialScannerComponent()
           : base("Serial Device Scanner", "SerialScan",
                  "Lists serial (COM) devices connected to this PC with their friendly names.",
-                 "Appendage", "Device")
+                 "Appendage", "Port")
         {
         }
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
-            pManager.AddBooleanParameter("Refresh", "R", "Refresh device list. Use button instead of toggle.", GH_ParamAccess.item, true);
+            pManager.AddBooleanParameter("Refresh", "Refresh", "Refresh device list. Use button instead of toggle.", GH_ParamAccess.item, true);
         }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.AddTextParameter("Port", "P", "COM port name.", GH_ParamAccess.list);
-            pManager.AddTextParameter("Name", "N", "Device friendly name.", GH_ParamAccess.list);
+            pManager.AddTextParameter("Port", "Port", "COM port name.", GH_ParamAccess.list);
+            pManager.AddTextParameter("Name", "Name", "Device friendly name.", GH_ParamAccess.list);
         }
 
         protected override void SolveInstance(IGH_DataAccess DA)
